@@ -3,7 +3,7 @@ const Movies = require('../services/movieService');
 const router = express.Router();
 
 
-// router.get('/', Movies.get);
+router.get('/', Movies.discoverMovies);
 
 
 module.exports=router;

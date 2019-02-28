@@ -1,0 +1,7 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+}
