@@ -4,9 +4,12 @@
     width: 80%;
 }
 
-.moviesLeft{
-}
-
 .moviesRight{
     width: 85%;
+}
+
+@media only screen and (max-width: 1249px){
+    .moviesLeft{
+        display: none;
+    }
 }
