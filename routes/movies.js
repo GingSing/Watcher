@@ -4,6 +4,7 @@ const router = express.Router();
 
 
 router.get('/', Movies.discoverMovies);
+router.get('/trending', Movies.getTrendingMovies);
 
 
 module.exports=router;

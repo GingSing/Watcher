@@ -1,7 +1,22 @@
 .navBar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 15px;
+    box-shadow: 20px 0 20px orange;
+    background-color: black;
 }
+
 .links{
     display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.logo{
+    color: orange;
+}
+
+.links>*{
+    cursor: pointer;
+    color: white;
 }

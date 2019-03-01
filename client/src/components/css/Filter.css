@@ -1,0 +1,22 @@
+.filter{
+    margin: 20px;
+}
+
+.filterSearch{
+    padding: 5px;
+}
+
+.filterSearch:focus{
+    outline-color: orange;
+}
+
+.filterTypeList{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.filterTypeList>li {
+    padding: 5px 0 5px 0;
+    cursor: pointer;
+}

@@ -1,0 +1,61 @@
+.moviesList{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-gap: 30px;
+    margin: 10px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(373px, 1fr));
+    grid-template-rows: 265px;
+}
+
+.moviesList>li {
+    display: inline-block;
+}
+
+.moviesCard{
+    display: flex;
+    box-shadow: 0 0 10px rgb(219, 218, 218);
+    transition: all 250ms ease;
+}
+
+.moviesCard:hover{
+    box-shadow: 0 0 20px rgb(173, 173, 173);
+    transition: all 250ms ease;
+}
+
+.moviesMetaData{
+    width: calc(100% - 185px);
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+}
+
+.moviesTitle{
+    margin: 0;
+    padding: 5px;
+    font-size: .8em;
+}
+
+.moviesOverview{
+    margin-top: 7px;
+    overflow-y: hidden;
+    height: 150px;
+    font-size: .7em;
+}
+
+.moviesOverview:hover{
+    overflow-y: auto;
+}
+
+.dateReleased{
+    font-size: .75em;
+    color: var(--theme-color);
+}
+
+.moviesPoster{
+    width: 185px;
+    height: 265px;
+    display: block;
+    cursor: pointer;
+}

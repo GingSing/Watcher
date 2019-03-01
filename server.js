@@ -4,12 +4,14 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const movies = require('./routes/movies');
+const tv = require('./routes/tv');
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/movies', movies);
+app.use('/tv', tv);
 
 const PORT = process.env.PORT || 5000;
 
