@@ -3,15 +3,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const movies = require('./routes/movies');
-const tv = require('./routes/tv');
+const movies = require('./routes/api/movies');
+const tv = require('./routes/api/tv');
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use('/movies', movies);
-app.use('/tv', tv);
+app.use('/api/movies', movies);
+app.use('/api/tv', tv);
 
 const PORT = process.env.PORT || 5000;
 

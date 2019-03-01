@@ -1,5 +1,5 @@
 const express = require('express');
-const TV = require('../services/tvService');
+const TV = require('../../services/tvService');
 const router = express.Router();
 
 

@@ -10,7 +10,7 @@ class Movies extends Component{
         movies: []
     }
     componentDidMount(){
-        fetch('http://localhost:5000/movies')
+        fetch('http://localhost:5000/api/movies')
             .then(res => res.json())
             .then(data => this.setState({
                 movies: data.results
