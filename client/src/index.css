@@ -7,7 +7,8 @@ body {
 
 :root{
   --main-background-color:rgb(237,241,245);
-  --theme-color: orange;
+  --theme-color: rgb(84, 82, 167);
+  --theme-color-2: rgb(135, 32, 145);
 }
 
 /* width */

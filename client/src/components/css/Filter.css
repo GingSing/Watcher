@@ -7,7 +7,11 @@
 }
 
 .filterSearch:focus{
-    outline-color: orange;
+    outline-color: var(--theme-color);
+}
+
+.filterHeaders{
+    color: var(--theme-color-2);
 }
 
 .filterTypeList{

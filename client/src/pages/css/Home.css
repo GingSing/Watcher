@@ -1,0 +1,35 @@
+.home{
+    background-color: white;
+}
+
+.homeHeader{
+    display: flex;
+    justify-content: space-around;
+}
+
+.homeHeaderList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.homeHeaderList>li{
+    margin-left: 20px;
+}
+
+.homeHeaderList>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.homeCarouselList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.homeCarouselList>li{
+    display: inline-block;
+}

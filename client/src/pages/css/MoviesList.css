@@ -35,6 +35,7 @@
     margin: 0;
     padding: 5px;
     font-size: .8em;
+    color: var(--theme-color-2);
 }
 
 .moviesOverview{

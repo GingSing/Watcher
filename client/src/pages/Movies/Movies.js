@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Filter } from '../../components';
 import MoviesList from './MoviesList';
-import Page from '../Page';
 
 import '../css/Movies.css';
 
@@ -10,7 +9,7 @@ class Movies extends Component{
         movies: []
     }
     componentDidMount(){
-        fetch('/api/movies')
+        fetch('/api/movies/trending')
             .then(res => res.json())
             .then(data => this.setState({
                 movies: data.results
@@ -20,7 +19,6 @@ class Movies extends Component{
     render(){
         console.log(this.state.movies);
         return(
-            <Page>
                 <div className="movies">
                     <div className="moviesLeft">
                         <Filter />
@@ -29,7 +27,6 @@ class Movies extends Component{
                         <MoviesList movies={this.state.movies} />
                     </div>
                 </div>
-            </Page>
         );
     }
 }

@@ -20,7 +20,6 @@ class MoviesList extends Component{
 }
 
 const MoviesCard = ({movie}) => {
-    console.log(movie);
     return(
         <div className="moviesCard">
             <LazyLoadImage className="moviesPoster" effect="blur" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt=""/>

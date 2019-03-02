@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { Movies, Home } from './pages';
+import { Movies, Home, Movie, Page } from './pages';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +9,10 @@ class App extends Component {
       <div className="App">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/movies" component={Movies}/>
+          <Page>
+            <Route path="/movies" component={Movies}/>
+            <Route path="/movie/:movieId" component={Movie} />
+          </Page>
         </Switch>
       </div>
     );
